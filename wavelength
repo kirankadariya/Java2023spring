@@ -1,0 +1,210 @@
+
+
+/*Kiran Kadariyaa
+
+  Homework 02
+
+  Question 01*/
+
+
+
+#include<iostream> //Using header
+
+using namespace std;
+
+
+
+int main()
+
+{
+
+  float wavelength;
+
+  int count=0;
+
+  cout<<"Please input a visible wavelength: ";
+
+  cin>>wavelength;
+
+ 
+  count++;
+
+  if (wavelength<400)
+
+    {
+
+      
+
+      cout<<"Your wavelength is too small.\n";
+
+      
+
+    }
+
+  
+
+  else
+
+    {
+
+      if(400<=wavelength and wavelength<700)
+
+	{ 	
+
+	  cout<<"Your wavelength corresponds to the color ";
+
+	}
+
+      
+
+      count++;
+
+      if(400<=wavelength and wavelength<445) 
+
+	
+
+	{ 
+
+	  
+
+	  cout<<"Violet."<<endl;
+
+	}
+
+      
+
+      else
+
+	{
+
+	  count++;
+
+	  if(445<=wavelength and wavelength<475) 
+
+	    {
+
+	      cout<<"Indigo."<<endl;
+
+	    }
+
+	  
+
+	  else
+
+	    {
+
+	      count++;
+
+	      if(475<=wavelength and wavelength<510)
+
+		{
+
+		   cout<<"Blue."<<endl;
+
+		}
+
+	      
+
+	      else
+
+		{
+
+		  count++;
+
+		  if(510<=wavelength and wavelength<570)
+
+		    {
+
+		      cout<<"Green."<<endl;
+
+		    }
+
+		  
+
+		  else
+
+		    {
+
+		      count++;
+
+		      if(570<=wavelength and wavelength<590)
+
+			{
+
+			  cout<<"Yellow."<<endl;
+
+			}
+
+		      
+
+		      else
+
+			{
+
+			  count++;
+
+			  if(590<=wavelength and wavelength<650)
+
+			    {
+
+			      cout<<"Orange."<<endl;
+
+			    }
+
+			  
+
+			  else
+
+			    {
+
+			      count++;
+
+			      if(650<=wavelength and wavelength<700) 
+
+				{
+
+				  cout<<"Red."<<endl;
+
+				}
+
+			      
+
+			      else
+
+				{
+
+				  count++;
+
+				  if(wavelength>=700)
+
+				    
+
+				    {	      
+
+				      cout<<"Your wavelength is too large.\n";
+
+				    }
+
+				}
+
+			    }
+
+			}
+
+		    }
+
+		}
+
+	    }
+
+	}
+
+    }
+
+
+
+  cout<<"You evaluated "<<count<<" conditional expressions.\n";
+
+  return 0;  
+
+}
